@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 820px 85px;
+    grid-template-areas:
+    "c"
+    "p"
+    "r";
+}
+
+header {
+    grid-area: c;
+}
+
+header > img {
+    width: 1519px;
+    height: 170px;
+}
+
+main {
+    grid-area: p;
+    background-color: cyan;
+    border-top: 3px solid black;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    gap: 50px;
+}
+
+main > form > input {
+    background-color: white;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 3px solid black;
+}
+
+main > form > input:hover {
+    background-color: slategray;
+}
+
+footer {
+    grid-area: r;
+    border-top: 3px solid black;
+    height: 85px;
+}
+
+.icones {
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 200px;
+}
+
+a > input {
+    background-color: white;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 3px solid black;
+}
+
+a > input:hover {
+    background-color: slategray;
+}

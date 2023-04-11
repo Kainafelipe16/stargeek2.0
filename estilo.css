@@ -5,9 +5,10 @@
 }
 
 .container {
+    background-color: #001DFF;
     display: grid;
     grid-template-columns: 9.3fr 0.7fr;
-    grid-template-rows: 100px auto 85px;
+    grid-template-rows: 100px 1000px 85px;
     grid-template-areas:
     "c m"
     "p p"
@@ -16,16 +17,22 @@
 
 header {
     grid-area: c;
-    background-color: blue;
+    background-color: #001DFF;
     font-size: 300%;
     text-align: left;
-    padding: 30px;
+}
+
+header img {
+    background-color: #001DFF;
+    width: 600px;
+    height: 100px;
 }
 
 nav {
     grid-area: m;
     background-color: blue;
     font-size: 80px;
+    border-left: 3px solid black;
 }
 
 main {
@@ -37,6 +44,7 @@ main {
     justify-content: center;
     height: 1000px;
     gap: 100px;
+    border-top: 3px solid black;
 }
 
 .imagens {
@@ -47,28 +55,46 @@ main {
 
 .imagens > .imagem img {
     width: 300px;
-    height: 550px;
+    height: 500px;
+}
+
+.imagens > .imagem img:hover {
+    border: 5px solid mediumblue;
 }
 
 .imagens > .imagem2 img {
     width: 300px;
-    height: 550px;
+    height: 500px;
+}
+
+.imagens > .imagem2 img:hover {
+    border: 5px solid mediumblue;
 }
 
 .imagens > .imagem3 img {
     width: 300px;
-    height: 550px;
+    height: 500px;
+}
+
+.imagens > .imagem3 img:hover {
+    border: 5px solid mediumblue;
 }
 
 .imagens > .imagem4 img {
     width: 300px;
-    height: 550px;
+    height: 500px;
+}
+
+.imagens > .imagem4 img:hover {
+    border: 5px solid mediumblue;
 }
 
 footer {
     grid-area: r;
     background-color: white;
     padding: 10px;
+    border-top: 3px solid black;
+    height: 70px;
 }
 
 .icones {
@@ -77,6 +103,19 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 200px;
+}
+
+nav > div {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav > div > form > input {
+    background-color: black;
+    color: white;
 }
 
 @media (max-width:430px) {
