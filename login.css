@@ -5,7 +5,7 @@
 }
 
 .container {
-    background-color: white;
+    background-color: cyan;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px 900px 70px;
@@ -66,6 +66,17 @@ main > form > input[type="password"] {
     border-radius: 15px;
 }
 
+main > form > input[type="Submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+
 footer {
     grid-area: f;
     display: flex;
@@ -76,6 +87,7 @@ footer > a.cadastrar {
     font-size: 25px;
     display: flex;
     justify-content: center;
+    
 }
 
 footer > a.senha {

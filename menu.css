@@ -34,7 +34,7 @@ main > form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 130px;
     gap: 50px;
 }
 

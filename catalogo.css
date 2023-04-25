@@ -5,10 +5,10 @@
 }
 
 .container {
-    background-color: cyan;
+    background-color: #001DFF;
     display: grid;
     grid-template-columns: 9.3fr 0.7fr;
-    grid-template-rows: 100px 1000px 70px;
+    grid-template-rows: 100px 1000px 85px;
     grid-template-areas:
     "c m"
     "p p"
@@ -49,49 +49,56 @@ nav > div > form > input {
 }
 
 main {
-    grid-area: p;
-    border: 3px solid black;
-}
-
-main > form > div {
+    grid-area: p; 
+    background-color: cyan;
+    border-top: 3px solid black;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 300px;
 }
 
-main > form > div > input.titulo {
-    border: 3px solid black;
-    border-radius: 15px;
-    height: 25px;
+main > div.imagens {
+    display: flex;
+    width: 1300px;
+    height: 500px;
+
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    gap: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div > .img1 {
     width: 200px;
+    height: 300px;
 }
 
-main > form > div > textarea.contexto {
+main > div > .img2 {
+    width: 200px;
+    height: 300px;
     border: 3px solid black;
-    border-radius: 15px;
-    width: 250px;
-    height: 150px;
 }
 
-main > form > div > div.botoes {
-    display: inline;
-    padding-top: 100px;
+main > div > .img3 {
+    width: 200px;
+    height: 300px;
 }
 
-main > form > div > div.botoes > input[type="submit"] {
-    background-color: black;
-    color: white;
-}
-
-main > form > div > div.botoes > input[type="reset"] {
-    background-color: black;
-    color: white;    
+main > div > .img4 {
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
 }
 
 footer {
-    background-color: white;
     grid-area: r;
+    background-color: white;
     padding: 10px;
     border-top: 3px solid black;
     height: 70px;
