@@ -11,22 +11,23 @@
 
 <body>
     <div class="container">
+    <div class="mensagem"></div>
         <header><img src="/imagens/main-qimg-70b7a200b6a8239229ccb25a6cbbebc6-lq.jpg"></header>
 
         <nav>
             <div>
-                <form action="http://127.0.0.1:5500/menu.html">
+                <form action="http://127.0.0.1:5501/menu.html">
                     <input type="submit" style="width: 60px; height: 40px;" value="Menu">
                 </form>
             </div>
         </nav>
 
         <main>
-            <form action="index.html">
+            <form id="formulario">
                 <label class="email">Digite aqui seu melhor E-mail:</label>
-                <input type="email" value="" placeholder="Digite aqui seu E-mail...">
+                <input type="email" id="email" value="" placeholder="Digite aqui seu E-mail...">
                 <label class="senha">Digite aqui uma Senha:</label>
-                <input type="password" value="" placeholder="Digite aqui sua senha...">
+                <input type="password" id="senha" value="" placeholder="Digite aqui sua senha...">
             <div class="linha">
                 <input type="checkbox" value="">
                 <label>Eu li e concordo com os <label class="termos"> Termos de Uso </label> e com a <label class="politica"> Política de Privacidade </label> </label>
@@ -40,5 +41,6 @@
         </footer>
 
     </div>
+<script src="cadastro.js"></script>
 </body>
 </html>

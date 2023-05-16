@@ -12,22 +12,23 @@
 
 <body>
     <div class="container">
+    <div class="mensagem"></div>
         <header><img src="imagens/unnamed.png"></header>
 
         <nav>
             <div>
-                <form action="http://127.0.0.1:5500/menu.html">
+                <form action="http://127.0.0.1:5501/menu.html">
                     <input type="submit" style="width: 60px; height: 40px;" value="Menu">
                 </form>
             </div>
         </nav>
 
         <main>
-            <form action="index.html">
+            <form id="formulario">
                 <label>Digite seu E-mail:</label>
-                <input type="email" value="" placeholder="Digite aqui o seu E-mail...">
+                <input type="email" id="email" value="" placeholder="Digite aqui o seu E-mail...">
                 <label>Digite sua Senha:</label>
-                <input type="password" placeholder="Digite aqui a sua senha...">
+                <input type="password" id="senha" placeholder="Digite aqui a sua senha...">
                 <input type="submit" value="Entrar">
             </form>
         </main>
@@ -38,6 +39,6 @@
         </footer>
         
     </div>
+<script src="login.js"></script>
 </body>
-
 </html>
