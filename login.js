@@ -9,7 +9,14 @@ formulario.onsubmit = (evento) => {
     dados.forEach((elemento) => {
         if (elemento.email === email.value && elemento.senha === senha.value) {
             evento.preventDefault();
-            mensagem.innerHTML = "<h1> Logado </h1>";
+            let dados = JSON.parse(sessionStorage.getItem("loagdo")) || [];
+            dados.push(
+                {
+                    email : email.value
+                }
+            )
+            sessionStorage.setItem("logado", JSON.stringify(dados));
+            mensagem.innerHTML = "<h1> Login efetuado com Sucesso !!! </h1>";
             return true;
         }
 

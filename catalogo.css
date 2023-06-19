@@ -49,50 +49,39 @@ nav > div > form > input {
 }
 
 main {
-    grid-area: p; 
-    background-color: cyan;
-    border-top: 3px solid black;
+    grid-area: p;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: cyan;
+    border-top: 3px solid black;  
+}
+
+main > button {
+    margin-top: 5%;
 }
 
 main > div.imagens {
     display: flex;
-    width: 1300px;
-    height: 500px;
-
 }
 
 .imagens {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: white;
     gap: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    min-height: 500px;
 }
 
-main > div > .img1 {
-    width: 200px;
+.imagens > div > img {
+    width: 400px;
     height: 300px;
 }
 
-main > div > .img2 {
-    width: 200px;
-    height: 300px;
-    border: 3px solid black;
-}
-
-main > div > .img3 {
-    width: 200px;
-    height: 300px;
-}
-
-main > div > .img4 {
-    width: 200px;
-    height: 300px;
+main > button {
     border: 2px solid black;
 }
 

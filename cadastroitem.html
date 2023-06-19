@@ -23,21 +23,16 @@
         </nav>
 
         <main>
-            <form action="catalogo.html">
+            <form id="formulario">
                 <div>
                     <h2>Título do Conteúdo:</h2>
-                    <input class="titulo" type="text" style="font-size: 20px;" value="">
+                    <input class="titulo" type="text" id="nome" style="font-size: 20px;" value="">
                     <h2>Contexto do Conteúdo:</h2>
-                    <textarea class="contexto" maxlength="250" rows="10" cols="35" style="font-size: 20px;"></textarea>
-                    <input type="radio" name="opcao" value="PNG">
-                    <h3>PNG</h3>
-                    <input type="radio" name="opcao" value="MP3">
-                    <h3>MP3</h3>
-                    <input type="radio" name="opcao" value="MP4">
-                    <h3>MP4</h3>
+                    <textarea class="contexto" id="descricao" maxlength="250" rows="10" cols="35" style="font-size: 20px;"></textarea>
+                    <input type="file" id="foto">
                     <div class="botoes">
                         <input type="reset" value="Limpar">
-                        <input type="submit" value="Enviar">
+                        <input class="btncadastrar" type="submit" value="Enviar">
                     </div>
                 </div>
             </form>
@@ -51,5 +46,6 @@
             </div>
         </footer>
     </div>
+<script src="cadastroitem.js"></script>
 </body>
 </html>
